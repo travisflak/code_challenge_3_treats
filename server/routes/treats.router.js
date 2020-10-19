@@ -29,7 +29,22 @@ router.post('/', (req,res) => {
     })
 })//end POST
 
-// PUT /treats/<id>
+// PUT /treats/<id> -- PUT /treats/<id>` updates the treat description (the edit button is also 
+// displayed with the Mode Toggle button)
+router.put('/:idParam', (req,res) => {
+    // console.log('in PUT request', req.params.idParam);
+    let param=req.params.idParam;
+    let queryText= `UPDATE "treats" SET "description" = 'modeToggle'
+    WHERE "id" = $1;`;
+    pool.query(queryText, [param])
+    .then((result) => {
+        console.log('in PUT request', req.params.idParam);
+        res.sendStatus(200);
+    }).catch((err) => {
+        console.log('error in PUT pg', err);
+        res.sendStatus(500);
+    })
+})//end PUT
 
 // DELETE /treats/<id>
 
