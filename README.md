@@ -18,7 +18,7 @@ You should not need to change the client code at all. In fact, it is minified to
 [x]1. Fork and clone repo.
 [x]2. `npm install` to get all dependencies.
 [x]3. Setup database as described below.
-4. You will need to adjust the pool connection configuration.
+[x]4. You will need to adjust the pool connection configuration.
 
 ### Database
 
