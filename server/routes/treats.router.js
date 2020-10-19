@@ -32,7 +32,6 @@ router.post('/', (req,res) => {
 // PUT /treats/<id> -- PUT /treats/<id>` updates the treat description (the edit button is also 
 // displayed with the Mode Toggle button)
 router.put('/:idParam', (req,res) => {
-    // console.log('in PUT request', req.params.idParam);
     let param=req.params.idParam;
     let queryText= `UPDATE "treats" SET "description" = 'modeToggle'
     WHERE "id" = $1;`;
@@ -49,7 +48,6 @@ router.put('/:idParam', (req,res) => {
 
 // DELETE /treats/<id>` Deletes a specific treat. 
 // Note that the Mode Toggle button in the interface will display the delete button for each treat.
-// DELETE /treats/<id>
 router.delete('/:idParam', (req,res) => {
     let param=req.params.idParam;
     let queryText= `DELETE FROM "treats" WHERE "id" = $1;`;
