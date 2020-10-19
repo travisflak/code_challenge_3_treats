@@ -46,8 +46,7 @@ router.put('/:idParam', (req,res) => {
 })//end PUT
 
 
-// DELETE /treats/<id>` Deletes a specific treat. 
-// Note that the Mode Toggle button in the interface will display the delete button for each treat.
+// DELETE /treats/<id>`
 router.delete('/:idParam', (req,res) => {
     let param=req.params.idParam;
     let queryText= `DELETE FROM "treats" WHERE "id" = $1;`;
