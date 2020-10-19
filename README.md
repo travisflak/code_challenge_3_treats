@@ -22,7 +22,7 @@ You should not need to change the client code at all. In fact, it is minified to
 
 ### Database
 
-Create a new database named: `sql_code_challenge`
+[x]Create a new database named: `sql_code_challenge`
 
 ### Create Treats Table
 
@@ -45,7 +45,7 @@ VALUES
 
 ### Test your project
 
-Run `npm start` to start the server. Open http://localhost:3000/ in your browser and you should see something like the following:
+[x]Run `npm start` to start the server. Open http://localhost:3000/ in your browser and you should see something like the following:
 
 ![start](images/start.png)
 
@@ -61,11 +61,11 @@ Create the routes and SQL queries necessary to respond to the requests from the 
 
 You will need:
 
-- [ ] `GET /treats` should return all treats from the database.
+- [x] `GET /treats` should return all treats from the database.
 
-- [ ] `DELETE /treats/<id>` Deletes a specific treat. Note that the Mode Toggle button in the interface will display the delete button for each treat.
+- [x] `DELETE /treats/<id>` Deletes a specific treat. Note that the Mode Toggle button in the interface will display the delete button for each treat.
 
-- [ ] `POST /treats` expects a treat name, description and link to a url image. There are images provided in `/server/public/assets`
+- [x] `POST /treats` expects a treat name, description and link to a url image. There are images provided in `/server/public/assets`
 
 - [ ] `PUT /treats/<id>` updates the treat description (the edit button is also displayed with the Mode Toggle button).
 
