@@ -15,9 +15,9 @@ You should not need to change the client code at all. In fact, it is minified to
 
 **IMPORTANT:** Make sure to start postgres!
 
-1. Fork and clone repo.
-2. `npm install` to get all dependencies.
-3. Setup database as described below.
+[x]1. Fork and clone repo.
+[x]2. `npm install` to get all dependencies.
+[x]3. Setup database as described below.
 4. You will need to adjust the pool connection configuration.
 
 ### Database

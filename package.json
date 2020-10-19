@@ -11,5 +11,15 @@
   "dependencies": {
     "express": "^4.16.4",
     "pg": "^8.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimeAcademy/full-stack-treats.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/PrimeAcademy/full-stack-treats/issues"
+  },
+  "homepage": "https://github.com/PrimeAcademy/full-stack-treats#readme"
 }
